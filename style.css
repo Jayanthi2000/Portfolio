@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+    }
+    
+    html{
+    scroll-behavior:smooth;
+    }
+    
+    body{
+    background:#0f172a;
+    color:white;
+    }
+    
+    .navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+    position:fixed;
+    width:100%;
+    background:#020617;
+    }
+    
+    .menu a{
+    margin-left:20px;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    }
+    
+    .menu a:hover{
+    color:cyan;
+    }
+    
+    .home{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image:url("backgroundimg.jpg");
+    background-size:cover;
+    }
+    
+    .home-container{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    }
+    
+    .profile{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    }
+    
+    .home-text h1{
+    font-size:40px;
+    margin-bottom:10px;
+    }
+    
+    .home-text h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+    }
+    
+    .btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    }
+    
+    .about{
+    padding:100px;
+    text-align:center;
+    background:#1e293b;
+    }
+    
+    .skills{
+    padding:100px;
+    text-align:center;
+    }
+    
+    .skill-icons img{
+    width:70px;
+    margin:20px;
+    }
+    
+    .contact{
+    padding:100px;
+    text-align:center;
+    background:#1e293b;
+    }
+    #projects{
+        padding:80px;
+        background:#1e293b;
+        color:white;
+        }
+        
+        .project-title{
+        font-size:32px;
+        margin-bottom:30px;
+        color:#38bdf8;
+        text-align:center;
+        }
+        
+        /* grid layout */
+        .projects-container{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+        }
+        
+        /* project card */
+        .project-card{
+        background:#111827;
+        padding:25px;
+        border-radius:15px;
+        transition:0.3s;
+        border:1px solid #334155;
+        }
+        
+        /* hover effect */
+        .project-card:hover{
+        transform:translateY(-6px);
+        box-shadow:0 0 15px #38bdf8;
+        }
+        
+        /* project title */
+        .project-card h3{
+        color:#38bdf8;
+        margin-bottom:10px;
+        }
+        
+        /* project description */
+        .project-card p{
+        margin-bottom:15px;
+        color:#cbd5f5;
+        }
+        
+        /* view project link */
+        .project-card a{
+        color:#38bdf8;
+        text-decoration:none;
+        font-weight:bold;
+        }
