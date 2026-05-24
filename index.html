@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Jeyanthi P — Full Stack Developer</title>
+<title>Jeyanthi — Full Stack Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -151,6 +151,15 @@ body a:hover ~ #cursor,body button:hover ~ #cursor{transform:translate(-50%,-50%
   box-shadow:0 4px 20px var(--accent-glow);
 }
 .sb-hire:hover{opacity:.88;transform:translateY(-1px)}
+.sb-resume{
+  display:flex;align-items:center;justify-content:center;gap:.5rem;
+  text-align:center;border:1px solid var(--border2);
+  background:var(--glass);backdrop-filter:blur(8px);color:var(--accent);
+  padding:.6rem;border-radius:10px;
+  font-family:'JetBrains Mono',monospace;font-size:.78rem;
+  text-decoration:none;transition:all .25s;
+}
+.sb-resume:hover{background:var(--accent-dim);transform:translateY(-1px)}
 
 /* ══ TOPBAR MOBILE ══ */
 #topbar{
@@ -294,7 +303,15 @@ section{padding:6rem 5%;position:relative}
   box-shadow:0 4px 20px var(--accent-glow);
 }
 .btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 32px var(--accent-glow)}
-.btn-g{
+.btn-resume{
+  background:var(--glass);backdrop-filter:blur(12px);
+  border:1px solid var(--border2);color:var(--accent);
+  padding:.75rem 1.75rem;border-radius:10px;
+  font-family:'JetBrains Mono',monospace;font-size:.85rem;
+  text-decoration:none;transition:all .25s;
+  display:inline-flex;align-items:center;gap:.5rem;
+}
+.btn-resume:hover{background:var(--accent);color:var(--bg);transform:translateY(-2px);box-shadow:0 8px 32px var(--accent-glow)}
   background:var(--glass);backdrop-filter:blur(12px);
   border:1px solid var(--border2);color:var(--accent);
   padding:.75rem 1.75rem;border-radius:10px;
@@ -571,6 +588,10 @@ footer span{color:var(--accent)}
       <span id="themeIcon">🌙</span><span id="themeLabel">Dark Mode</span>
     </button>
     <a href="mailto:jeyanthicse2000@gmail.com" onclick="window.location.href='mailto:jeyanthicse2000@gmail.com';return false;" class="sb-hire">hire me ↗</a>
+    <a href="resume.pdf" download="Jeyanthi_FullStack_Developer_Resume.pdf" class="sb-resume">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Resume
+    </a>
   </div>
 </aside>
 
@@ -592,7 +613,7 @@ footer span{color:var(--accent)}
   <div style="position:relative;z-index:1;max-width:720px">
     <div class="hero-badge"><span class="badge-pulse"></span>Open to full-time opportunities</div>
     <p class="hero-hi">Hi there, I'm</p>
-    <h1 class="hero-name"><span class="g">Jeyanthi</span><br></h1>
+    <h1 class="hero-name"><span class="g">Jeyanthi</span></h1>
     <div class="hero-typed">
       <span class="typed-arrow">→</span>
       <span id="typed"></span><span class="cursor-blink">|</span>
@@ -606,6 +627,10 @@ footer span{color:var(--accent)}
       <a href="mailto:jeyanthicse2000@gmail.com" onclick="window.location.href='mailto:jeyanthicse2000@gmail.com';return false;" class="btn-g">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
         Get In Touch
+      </a>
+      <a href="resume.pdf" download="Jeyanthi_FullStack_Developer_Resume.pdf" class="btn-resume">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
       </a>
     </div>
     <div class="hero-stats">
@@ -627,7 +652,7 @@ footer span{color:var(--accent)}
   </div>
   <div class="about-grid">
     <div class="reveal-left">
-      <p class="about-p">I'm <strong>Jeyanthi </strong>, a Full Stack Developer from <strong>Madurai, Tamil Nadu</strong>. I graduated with a B.E in Computer Science and recently completed a role at Scope Tech Software Solutions.</p>
+      <p class="about-p">I'm <strong>Jeyanthi P</strong>, a Full Stack Developer from <strong>Madurai, Tamil Nadu</strong>. I graduated with a B.E in Computer Science and recently completed a role at Scope Tech Software Solutions.</p>
       <p class="about-p">My stack spans the full web — <strong>Java & Spring Boot</strong> for robust backends, <strong>React JS with Tailwind</strong> for clean frontends, and <strong>MySQL & MongoDB</strong> for data. I love making these layers communicate seamlessly.</p>
       <p class="about-p">I believe in writing code that's readable, maintainable and built for real users. Always exploring new frameworks and challenging myself with new projects.</p>
       <div class="chips">
